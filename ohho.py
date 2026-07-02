@@ -1,27 +1,11 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-# Web page ki basic settings (Title aur Full Screen Layout)
-st.set_page_config(page_title="Kalpvruksha Jadibutti Bhandar", layout="wide")
+st.set_page_config(page_title="Mera Chatbot", layout="centered")
+st.title("🤖 Mera AI Chatbot")
 
-# 1. APNI LINK SIRF IS EK JAGAH PAR UPDATE KAREIN:
-CHATBASE_LINK = "https://www.chatbase.co/chatbot-iframe/Yo9IAwiCy3KAPOyzOWzHC"
+# Jo link aapne Chatbase se copy kiya hai, use yahan src ki jagah paste karein
+chatbot_url = "https://chatbase.co"
 
-# 2. HTML styling aur iframe code (Isme koi badlav nahi karna hai)
-html_code = f"""
-<style>
-    body, html {{ 
-        margin: 0; 
-        padding: 0; 
-        height: 100vh; 
-        overflow: hidden; 
-        background-color: #f4f4f5; 
-    }}
-    iframe {{ 
-        width: 100%; 
-        height: 100vh; 
-        border: none; 
-    }}
-</style>
-<iframe src="https://www.chatbase.co/chatbot-iframe/Yo9IAwiCy3KAPOyzOWzHC"></iframe>
-"""
+# Yeh line chatbot ko screen par dikhayegi
+components.iframe(chatbot_url, height=600, scrolling=True)
