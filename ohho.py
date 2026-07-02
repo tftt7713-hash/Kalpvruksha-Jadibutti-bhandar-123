@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 st.set_page_config(page_title="Kalpvruksha Jadibutti Bhandar", layout="wide")
 
 # 1. APNI LINK SIRF IS EK JAGAH PAR UPDATE KAREIN:
-CHATBASE_LINK = "https://www.chatbase.co/Yo9IAwiCy3KAPOyzOWzHC/help"
+CHATBASE_LINK = "https://www.chatbase.co/chatbot-iframe/Yo9IAwiCy3KAPOyzOWzHC"
 
 # 2. HTML styling aur iframe code (Isme koi badlav nahi karna hai)
 html_code = f"""
@@ -23,5 +23,5 @@ html_code = f"""
         border: none; 
     }}
 </style>
-<iframe src="https://www.chatbase.co/Yo9IAwiCy3KAPOyzOWzHC/help"></iframe>
+<iframe src="https://www.chatbase.co/chatbot-iframe/Yo9IAwiCy3KAPOyzOWzHC"></iframe>
 """
